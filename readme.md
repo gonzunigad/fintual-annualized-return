@@ -6,7 +6,11 @@
     Bonus Track: make the Profit method return the "annualized return" of the portfolio between the given dates.
 
 El archivo interesante está en `src/portfolio.js`;
-Hay un método `profit` que devuelve las ganancias entre dos fechas. 
+
+Hay un método `profit(from, to)` que devuelve las ganancias entre dos fechas.
+
+También hay un método `annualizedReturn(from, to)` que devuelve el retorno anualizado según [esta definición](https://www.investopedia.com/terms/a/annualized-total-return.asp). 
+
 
 Si quieren probar: 
 ```bash
