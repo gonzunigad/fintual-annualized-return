@@ -1,8 +1,8 @@
 const DAYS_IN_YEAR = 365;
 class Portfolio {
 
-    constructor() {
-        this.stocks = [];
+    constructor(stocks = []) {
+        this.stocks = stocks;
     }
 
     addStock(stock) {
