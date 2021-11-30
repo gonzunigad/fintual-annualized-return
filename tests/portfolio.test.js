@@ -13,8 +13,8 @@ test('it can calculates profit with multiple stocks', () => {
     const from = '2020/11/29';
     const to = '2021/11/29';
     portfolio.addStock(new Stock('AAPL', {[from]: 10, [to]: 100}))
-    portfolio.addStock(new Stock('TSLA', {[from]: 10, [to]: 100}))
-    expect(portfolio.profit(from, to)).toBe(180);
+    portfolio.addStock(new Stock('TSLA', {[from]: 100, [to]: 1200}))
+    expect(portfolio.profit(from, to)).toBe(1190);
 });
 
 test('it can calculates annualized return', () => {
